@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 87.0.4280 (Windows 10.0.0)" package="unit" timestamp="2020-12-13T13:01:36" id="0" hostname="DESKTOP-4E8KAKQ" tests="5" errors="0" failures="0" time="0.148">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/87.0.4280.88 Safari/537.36"/>
+  </properties>
+  <testcase name="SearchComponent check default/initial state of the application" time="0.082" classname="unit.SearchComponent"/>
+  <testcase name="[List Unit Tests] [MapCountriesFound] Should assign event passed to method to local array variable" time="0.03" classname="unit.[List Unit Tests]"/>
+  <testcase name="[Search Unit Tests] [CountrySearch] Should emit the result of the filter service to the parent component" time="0.017" classname="unit.[Search Unit Tests]"/>
+  <testcase name="[Search Service Unit Tests] [FilterCountries] Should allow fuzzy search" time="0.01" classname="unit.[Search Service Unit Tests]"/>
+  <testcase name="[Search Service Unit Tests] [FilterCountries] Should allow multiple case inputs" time="0.009" classname="unit.[Search Service Unit Tests]"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

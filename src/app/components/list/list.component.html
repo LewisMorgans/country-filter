@@ -1,0 +1,9 @@
+<app-search (selectedCountry)="mapCountriesFound($event)"></app-search>
+<div class="card_container">
+  <div class="card" *ngFor="let country of countriesToBeRendered">
+    {{ country }}
+  </div>
+</div>
+<div *ngIf="!countriesToBeRendered.length" class="no_data_div">
+  No Data Available
+</div>
