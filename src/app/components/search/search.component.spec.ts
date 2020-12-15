@@ -6,7 +6,6 @@ import { SearchComponent } from "./search.component";
 describe("[Search Unit Tests]", () => {
   let component: SearchComponent;
   let fixture: ComponentFixture<SearchComponent>;
-  let searchInput;
   let mockFilterService;
 
   beforeEach(async(() => {
@@ -27,9 +26,10 @@ describe("[Search Unit Tests]", () => {
   }));
 
   it("[CountrySearch] Should emit the result of the filter service to the parent component", () => {
-    const event = new Event("Albania");
+    const event = "Albania";
     const spy = spyOn(component.selectedCountry, "emit").and.callThrough();
     component.countrySearch(event);
     expect(spy).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenCalledWith(mockFilterService.filterCountries())
   });
 });

@@ -3,11 +3,11 @@ import { countriesArray } from "app/shared/index";
 
 @Injectable()
 export class FilterService {
-  public filterCountries(searchString): Array<string> {
-    const result = countriesArray.filter((country) =>
-      country.toLowerCase().includes(searchString.toLowerCase())
-    );
+  private result: Array<string>;
 
-    return result;
+  public filterCountries(searchString: string): Array<string> {
+    return (this.result = countriesArray.filter((country) =>
+      country.toLowerCase().includes(searchString.toLowerCase())
+    ));
   }
 }

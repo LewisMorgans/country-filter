@@ -7,12 +7,11 @@ import { FilterService } from "../../services/filter.service";
   templateUrl: "./search.component.html",
 })
 export class SearchComponent {
-
   @Output() selectedCountry = new EventEmitter();
 
   constructor(private readonly filterService: FilterService) {}
 
-  public countrySearch(event: Event): void {
-    this.selectedCountry.emit(this.filterService.filterCountries(event));
+  public countrySearch(param: string): void {
+    this.selectedCountry.emit(this.filterService.filterCountries(param));
   }
 }
